@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Rango</title>
+    <title>Rango - Category</title>
 </head>
 <body>
     <div>
@@ -19,6 +19,12 @@
     {% else %}
         The specified category does not exit!
     {% endif %}
+    </div>
+    <div>
+            {% if category %}
+                <a href="/rango/category/{{category.slug}}/add_page/">Add Page</a> <br/>
+            {% endif %}
+            <a href="/rango/">Index</a><br />
     </div>
 </body>
 </html>
