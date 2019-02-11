@@ -7,6 +7,7 @@ from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login
 from datetime import datetime
+from rango.models import Page
 
 def index(request):
     #context_dict = {'boldmessage': "Crunchie, creamy, cookie, candy, cupcake!"}
